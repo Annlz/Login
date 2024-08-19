@@ -1,0 +1,28 @@
+<div class="login-container">
+  <form (ngSubmit)="onSubmit()" class="login-form" *ngIf="!showSignUp">
+ 
+    <h2>Welcome back</h2>
+    <p class="subtitle">Glad to see you again 👋<br>Login to your account below</p>
+
+
+    <!-- Add email input -->
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input type="email" [(ngModel)]="email" name="email" id="email" placeholder="Enter email..." required>
+    </div>
+
+    <!-- Update password input -->
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" [(ngModel)]="password" name="password" id="password" placeholder="Enter password..." required>
+    </div>
+
+    <!-- Update login button -->
+    <button type="submit" class="login-button">Login</button>
+
+    <!-- Update sign up link -->
+    <p class="signup-link">Don't have an account? <a href="#" (click)="toggleSignUp($event)">Sign up for Free</a></p>
+  </form>
+
+  <app-sign-up *ngIf="showSignUp" (cancelSignUp)="toggleSignUp()"></app-sign-up>
+</div>

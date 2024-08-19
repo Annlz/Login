@@ -1,0 +1,112 @@
+.signup-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: left;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-row.spaced {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 0 0 48%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, select {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #5d5fef;
+}
+
+select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn-cancel, .btn-confirm {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 48%;
+  font-family: Arial, sans-serif;
+}
+
+.btn-cancel {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn-cancel:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-confirm {
+  background-color: #5d5fef;
+  color: white;
+}
+
+.btn-confirm:hover {
+  background-color: #4b4ddb;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #5d5fef;
+  text-decoration: none;
+}
